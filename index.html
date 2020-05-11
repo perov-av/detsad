@@ -9,7 +9,7 @@
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
 	<meta property="og:image" content="path/to/image.jpg">
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
@@ -29,103 +29,223 @@
 </head>
 
 <body>
-	<!-- Шапка сайта -->
-	<section class="banner" id="sec">
-<!-- Верхняя Шапка с лого и телефонами -->
-		<header>
-			<a href="#" class="logo"><img class="img-responsive" src="img/logo.png" alt="Детский сад Лева"><em>Лёва</em></a>
-			<div class="center-content">
-				<div class="telephone">
-					<i class="fa fa-mobile" aria-hidden="true"></i>
-					<strong>+7 (960) 231-08-55</strong>
-				</div>
-				<div class="telephone">
-					<i class="fa fa-mobile" aria-hidden="true"></i>
-					<strong>+7 (967) 359-63-97</strong>
-				</div>
+	<!-- Шапка сайта *****************************************-->
+	<div id="toggle"></div>
+	<div class="overlay"></div>
+<!-- Меню с навигацией по сайту *************************** -->
+	<div id="navigation">
+		<ul>
+			<li class="menuLi"><a href="#about">О нас</a></li>
+			<li class="menuLi"><a href="#programms">Программы развития</a></li>
+			<li class="menuLi"><a href="#pedagogi">Наши педагоги</a></li>
+			<li class="menuLi"><a href="#price">Услуги и цены</a></li>
+			<li class="menuLi"><a href="#">Локации детского сада</a></li>
+			<li class="menuLi"><a href="#">Отзывы</a></li>
+			<li class="menuLi"><a href="#">Фотогалерея</a></li>
+			<li class="menuLi"><a href="#">Новости</a></li>
+			<li class="menuLi"><a href="#contact">Контакты</a></li>
+		</ul>
+	</div>
+
+	
+	<header>
+		<a href="#" class="logo"><img class="img-responsive" src="img/logo.png" alt="Детский сад Лева"><em>Лёва</em></a>
+		<div class="center-content">
+			<div class="telephone">
+				<i class="fa fa-mobile" aria-hidden="true"></i>
+				<strong>+7 (960) 231-08-55</strong>
 			</div>
-			<div class="center-content">
-				
-				<address><i class="fa fa-map-marker" aria-hidden="true"></i>Вишерская улица, 3к2, <br>г. Санкт-Петербург</address>
+			<div class="telephone">
+				<i class="fa fa-mobile" aria-hidden="true"></i>
+				<strong>+7 (967) 359-63-97</strong>
 			</div>
-			<div id="toggle" onclick="toggle()"></div>
+		</div>
+		<div class="center-content">
+			<a href="#contact">
+				<address><i class="fa fa-map-marker" aria-hidden="true"></i>Вишерская улица, 3к2, <br>г. Санкт-Петербург
+				</address></a>
+			</div>
 		</header>
-
+		
+		<!-- Главный экран ************************************** -->
+		
+		
+	<section class="banner">
 		<div class="wrap">
-
 			<div class="heder-content">
 				<h1>Частный Детский сад <br><span>"Лёва"</span></h1>
 				<p class="description">Внимательные и заботливые педагоги рады каждому малышу!</p>
-				<a href="#" class="play" onclick="toggleV()">Смотреть видео<i class="fa fa-play-circle-o" aria-hidden="true"></i></a>
-				<div class="slide"></div>
+				<a href="#" class="play" onclick="toggleV()">Смотреть видео<i class="fa fa-play-circle-o"
+						aria-hidden="true"></i></a>
+				<!-- Блок со слайдом. Пока выключен*************************** -->
+				<!-- <div class="slide"></div> -->
 			</div>
-			<!-- Социальные кнопки на панели справа -->
 		</div>
-				<ul class="sci">
-					<li><a href="#"><i class="fa fa-vk"></i></a></li>
-					<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-					<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-					<li><a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
-				</ul>
-		
+
+		<!-- Социальные кнопки на панели справа ***************************-->
+		<ul class="sci">
+			<li><a href="#"><i class="fa fa-vk"></i></a></li>
+			<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+			<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+			<li><a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
+		</ul>
 	</section>
-	
-	
+
+	<!-- Вставка видео **************************************-->
 	<div class="trailer">
 		<video src="video/obzor-video.mp4" controls="true"></video>
 		<img src="img/close.png" alt="Видеообзор детского сада Лева" class="close" onclick="toggleV()">
 	</div>
-	
-	<!-- О нас -->
+
+	<!-- О нас **********************************************-->
 	<Section class="main-container">
 		<h2 id="about">О нас</h2>
 
-		<P> &#9884; Частный детский сад <strong>«Лёва»</strong> рассчитан на 16 детей. Малочисленные группы позволяют уделить максимальное внимание каждому ребенку и применить индивидуальный подход с учетом его потребностей. Такой подход позволяет детям находиться в уютной и доброжелательной атмосфере, что сокращает срок адаптации деток в новых для него условиях.</P>
-		<p> &#9884; Детский сад оборудован по санитарно-эпидемиологическим требованиям к дошкольным учреждениям. У каждого ребенка свое полотенце, полноценное спальное место в изолированном от игровой зоны помещении.</p> 
-		<p> &#9884; Развитие детей осуществляется с элементами методики Марии Монтессори, Бориса Павловича и Елены Алексеевны Никитиных и программы комплексного развития ребенка «От рождения до школы», доработанной и улучшенной нашими педагогами.</p>
-		<p> &#9884; У нас есть группы полного и неполного дня пребывания, где ребята получают драгоценный опыт общения и развития в доброжелательной атмосфере коллектива детей и взрослых.</P>
-
-		<h2>Наши преимущества</h2>
+		<P> &#9884; Частный детский сад <strong>«Лёва»</strong> рассчитан на 16 детей. Малочисленные группы позволяют
+			уделить максимальное внимание каждому ребенку и применить индивидуальный подход с учетом его потребностей. Такой
+			подход позволяет детям находиться в уютной и доброжелательной атмосфере, что сокращает срок адаптации деток в
+			новых для него условиях.</P>
+		<p> &#9884; Детский сад оборудован по санитарно-эпидемиологическим требованиям к дошкольным учреждениям. У каждого
+			ребенка свое полотенце, полноценное спальное место в изолированном от игровой зоны помещении.</p>
+		<p> &#9884; Развитие детей осуществляется с элементами методики Марии Монтессори, Бориса Павловича и Елены
+			Алексеевны Никитиных и программы комплексного развития ребенка «От рождения до школы», доработанной и улучшенной
+			нашими педагогами.</p>
+		<p class="last"> &#9884; У нас есть группы полного и неполного дня пребывания, где ребята получают драгоценный опыт общения и
+			развития в доброжелательной атмосфере коллектива детей и взрослых.</P>
+			
+			<!-- Наши преимущества ************************************* -->
+		<div class="headImg-wrap">
+			<div class="headImg">
+				<img src="img/leva/T1back.png" class="img-responsive" alt="Преимущества Детского сада Лёва">
+			</div>
+			<h2>Наши преимущества</h2>
+			<div class="headImg">
+				<img src="img/leva/T1.png" class="img-responsive lastImg" alt="Преимущества Детского сада Лёва">
+			</div>
+		</div>
 		<div class="box-wrap">
 			<div class="box">
-				<h2>1</h2>
-				<h3>Вступительный взнос</h3>
-				<p>В нашем детском саду отсутствует вступительный взнос при заключении договора. Мы не перекладываем на родителей обязанность обеспечения детского сада расходными материалами.</p>
+				<!-- <h2>1</h2> -->
+				<div class="front active">
+					<h3>Нет вступительного взноса</h3>
+				</div>
+				<div class="more"><i class="fa fa-info-circle" aria-hidden="true"></i>Подробнее...</div>
+				<div class="back">
+					<div class="go-back">
+						<i class="fa fa-undo" aria-hidden="true"></i>
+						Назад</div>
+					<p>В нашем детском саду отсутствует вступительный взнос при заключении договора. Мы не перекладываем на
+						родителей обязанность обеспечения детского сада расходными материалами.</p>
+				</div>
+			</div>
+
+			<div class="box">
+				<!-- <h2>2</h2> -->
+				<div class="front active">
+					<h3>Опытные педагоги</h3>
+				</div>
+				<div class="more"><i class="fa fa-info-circle" aria-hidden="true"></i>Подробнее...</div>
+				<div class="back">
+					<div class="go-back">
+						<i class="fa fa-undo" aria-hidden="true"></i>
+						Назад
+					</div>
+					<p>Учитывают детскую психологию, темпы индивидуального развития ребенка, применяют современные педагогические
+						технологии продуктивного и развивающего обучения.</p>
+				</div>
+			</div>
+
+			<div class="box">
+				<!-- <h2>3</h2> -->
+				<div class="front active">
+					<h3>Образовательные технологии</h3>
+				</div>
+				<div class="more"><i class="fa fa-info-circle" aria-hidden="true"></i>Подробнее...</div>
+				<div class="back">
+					<div class="go-back">
+						<i class="fa fa-undo" aria-hidden="true"></i>
+						Назад
+					</div>
+					<p>Мы используем современные технологии в области сохранения здоровья, проектной и исследовательской
+						деятельности.
+						Мы стараемся максимально заинтересовать ребенка и развить его способности.</p>
+				</div>
+			</div>
+
+			<div class="box">
+				<!-- <h2>4</h2> -->
+				<div class="front active">
+					<h3>Всестороннее развитие ребенка</h3>
+				</div>
+				<div class="more"><i class="fa fa-info-circle" aria-hidden="true"></i>Подробнее...</div>
+				<div class="back">
+					<div class="go-back">
+						<i class="fa fa-undo" aria-hidden="true"></i>
+						Назад</div>
+					<p>Занятия направлены на всестороннее развитие детей: физическое и музыкальное, развитие речи,
+						математических представлений, логики и мышления, представление об окружающем мире, о себе, мы
+						развиваем
+						творческий потенциал.</p>
+				</div>
 			</div>
 			<div class="box">
-				<h2>2</h2>
-				<h3>Опытные педагоги</h3>
-				<p>Учитывают детскую психологию, темпы индивидуального развития ребенка, применяют современные педагогические технологии продуктивного и развивающего обучения.</p>
+				<!-- <h2>5</h2> -->
+				<div class="front active">
+					<h3>Обучаемся играя</h3>
+				</div>
+				<div class="more"><i class="fa fa-info-circle" aria-hidden="true"></i>Подробнее...</div>
+				<div class="back">
+					<div class="go-back">
+						<i class="fa fa-undo" aria-hidden="true"></i>
+						Назад</div>
+						<p>Игра - ведущий вид деятельности в дошкольном возрасте. Именно через нее ребенок развивается и познает мир.
+						У
+						нас нет скучных занятий!</p>
+				</div>
 			</div>
 			<div class="box">
-				<h2>3</h2>
-				<h3>Образовательные технологии</h3>
-				<p>Мы используем современные технологии в области сохранения здоровья, проектной и  исследовательской деятельности. Мы стараемся максимально заинтересовать ребенка и развить его способности.</p>
+				<!-- <h2>6</h2> -->
+				<div class="front active">
+					<h3>Вкусно и полезно</h3>
+				</div>
+				<div class="more"><i class="fa fa-info-circle" aria-hidden="true"></i>Подробнее...</div>
+				<div class="back">
+					<div class="go-back">
+						<i class="fa fa-undo" aria-hidden="true"></i>
+						Назад</div>
+					<p>Сбалансированное пятиразовое питание полностью отвечает потребностям растущего организма. Меню разработано
+						с
+						учетом требований СанПиН. Поставкой готового питания занимается проверенная компания.</p>
+				</div>
 			</div>
 			<div class="box">
-				<h2>4</h2>
-				<h3>Всестороннее развитие ребенка</h3>
-				<p>Занятия направлены на всестороннее развитие детей: физическое и музыкальное развитие, развитие речи, математических представлений, логики и мышления, представление ребенка об окружающем мире, о себе, мы развиваем творческий потенциал.</p>
+				<!-- <h2>7</h2> -->
+				<div class="front active">
+					<h3>Главное - Здоровье</h3>
+				</div>
+				<div class="more"><i class="fa fa-info-circle" aria-hidden="true"></i>Подробнее...</div>
+				<div class="back">
+					<div class="go-back">
+						<i class="fa fa-undo" aria-hidden="true"></i>
+						Назад</div>
+					<p>Мы используем современные технологии в области сохранения здоровья, проектной и исследовательской
+						деятельности.
+						Мы стараемся максимально заинтересовать ребенка и развить его способности.</p>
+				</div>
 			</div>
 			<div class="box">
-				<h2>5</h2>
-				<h3>Обучаемся играя</h3>
-				<p>Игра - ведущий вид деятельности в дошкольном возрасте. Именно через нее ребенок развивается и познает мир. У нас нет скучных занятий!</p>
-			</div>
-			<div class="box">
-				<h2>6</h2>
-				<h3>Вкусно и полезно</h3>
-				<p>Сбалансированное пятиразовое питание полностью отвечает потребностям растущего организма. Меню разработано с учетом требований СанПиН. Поставкой готового питания занимается проверенная компания.</p>
-			</div>
-			<div class="box">
-				<h2>7</h2>
-				<h3>Главное - Здоровье</h3>
-				<p>Мы используем современные технологии в области сохранения здоровья, проектной и  исследовательской деятельности. Мы стараемся максимально заинтересовать ребенка и развить его способности.</p>
-			</div>
-			<div class="box">
-				<h2>8</h2>
-				<h3>Конструктор</h3>
-				<p>Вы хотите посещать детский сад только в определенные дни? Не проблема! С помощью конструктора мы можем рассчитать индивидуально стоимость абонемента.</p>
+				<!-- <h2>8</h2> -->
+				<div class="front active">
+					<h3>Конструктор</h3>
+				</div>
+				<div class="more"><i class="fa fa-info-circle" aria-hidden="true"></i>Подробнее...</div>
+				<div class="back">
+					<div class="go-back">
+						<i class="fa fa-undo" aria-hidden="true"></i>
+						Назад</div>
+					<p>Вы хотите посещать детский сад только в определенные дни? Не проблема! С помощью конструктора мы можем
+						рассчитать индивидуально стоимость абонемента.</p>
+				</div>
 			</div>
 		</div>
 	</Section>
@@ -144,7 +264,8 @@
 								<h3>Программа 1</h3>
 							</div>
 							<div class="slaiderContent">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, voluptates.elit. Numquam, voluptates.elit. Numquam, voluptates.elit. Numquam, voluptates.elit. Numquam, voluptates.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, voluptates.elit. Numquam,
+									voluptates.elit. Numquam, voluptates.elit. Numquam, voluptates.elit. Numquam, voluptates.</p>
 								<a href="#">Подробнее...</a>
 							</div>
 						</div>
@@ -155,7 +276,8 @@
 								<h3>Программа 2</h3>
 							</div>
 							<div class="slaiderContent">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, voluptates.elit. Numquam, voluptates.elit. Numquam, voluptates.elit. Numquam, voluptates.elit. Numquam, voluptates.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, voluptates.elit. Numquam,
+									voluptates.elit. Numquam, voluptates.elit. Numquam, voluptates.elit. Numquam, voluptates.</p>
 								<a href="#">Подробнее...</a>
 							</div>
 						</div>
@@ -166,7 +288,8 @@
 								<h3>Программа 3</h3>
 							</div>
 							<div class="slaiderContent">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, voluptates.elit. Numquam, voluptates.elit. Numquam, voluptates.elit. Numquam, voluptates.elit. Numquam, voluptates.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, voluptates.elit. Numquam,
+									voluptates.elit. Numquam, voluptates.elit. Numquam, voluptates.elit. Numquam, voluptates.</p>
 								<a href="#">Подробнее...</a>
 							</div>
 						</div>
@@ -177,7 +300,8 @@
 								<h3>Программа 4</h3>
 							</div>
 							<div class="slaiderContent">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, voluptates.elit. Numquam, voluptates.elit. Numquam, voluptates.elit. Numquam, voluptates.elit. Numquam, voluptates.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, voluptates.elit. Numquam,
+									voluptates.elit. Numquam, voluptates.elit. Numquam, voluptates.elit. Numquam, voluptates.</p>
 								<a href="#">Подробнее...</a>
 							</div>
 						</div>
@@ -188,36 +312,37 @@
 								<h3>Программа 5</h3>
 							</div>
 							<div class="slaiderContent">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, voluptates.elit. Numquam, voluptates.elit. Numquam, voluptates.elit. Numquam, voluptates.elit. Numquam, voluptates.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, voluptates.elit. Numquam,
+									voluptates.elit. Numquam, voluptates.elit. Numquam, voluptates.elit. Numquam, voluptates.</p>
 								<a href="#">Подробнее...</a>
 							</div>
 						</div>
 					</div>
-					
+
 				</div>
 			</div>
 		</div>
 	</section>
-	
+
 	<!-- Наши педагоги -->
-<section class="main-container">
-	<h2 id="pedagogi">Наши педагоги</h2>
-	<div class="box-wrap">
-		<div class="boxPed">
-			<div class="imgBox">
-				<img class="img-responsive" src="img/PerovaYS.jpg" alt="Перова Юлия Сергеевна">
+	<section class="main-container">
+		<h2 id="pedagogi">Наши педагоги</h2>
+		<div class="box-wrap">
+			<div class="boxPed">
+				<div class="imgBox">
+					<img class="img-responsive" src="img/PerovaYS.jpg" alt="Перова Юлия Сергеевна">
+				</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam unde reprehenderit alias a iusto ut?</p>
+				<h4>Перова Юлия Сергеевна<br><span>Главный педагог</span></h4>
 			</div>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam unde reprehenderit alias a iusto ut?</p>
-			<h4>Перова Юлия Сергеевна<br><span>Главный педагог</span></h4>
-		</div>
-		<div class="boxPed">
-			<div class="imgBox">
-				<img class="img-responsive" src="img/PerovaYS.jpg" alt="Перова Юлия Сергеевна">
+			<div class="boxPed">
+				<div class="imgBox">
+					<img class="img-responsive" src="img/PerovaYS.jpg" alt="Перова Юлия Сергеевна">
+				</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam unde reprehenderit alias a iusto ut?</p>
+				<h4>Перова Юлия Сергеевна<br><span>Главный педагог</span></h4>
 			</div>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam unde reprehenderit alias a iusto ut?</p>
-			<h4>Перова Юлия Сергеевна<br><span>Главный педагог</span></h4>
-		</div>
-		<!-- <div class="boxPed">
+			<!-- <div class="boxPed">
 			<div class="imgBox">
 				<img class="img-responsive" src="img/PerovaYS.jpg" alt="Перова Юлия Сергеевна">
 			</div>
@@ -231,26 +356,48 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam unde reprehenderit alias a iusto ut?</p>
 			<h4>Перова Юлия Сергеевна<br><span>Главный педагог</span></h4>
 		</div> -->
-	</div>
-</section>	
+		</div>
+	</section>
 	<div class="wave"></div>
 
-	<!-- Меню с навигацией по сайту -->
-	<div id="navigation">
-		<ul>
-			<li><a href="#about">О нас</a></li>
-			<li><a href="#programms">Программы развития</a></li>
-			<li><a href="#pedagogi">Наши педагоги</a></li>
-			<li><a href="#">Услуги и цены</a></li>
-			<li><a href="#">Локации детского сада</a></li>
-			<li><a href="#">Отзывы</a></li>
-			<li><a href="#">Фотогалерея</a></li>
-			<li><a href="#">Новости</a></li>
-			<li><a href="#">Контакты</a></li>
-		</ul>
-	</div>
+	<!-- Наши цены *************************************************-->
+	<section class="main-container">
+		<h2 id="price">Абонементы и цены</h2>
+		<div class="price-wrap">
+			<div class="imgLeva">
+				<img src="img/leva/L1.png" alt="Цены детский сад Лева" class="img-responsive">
+			</div>
+			<div class="accord">
+				<div class="accordItem" id="fullday">
+					<a class="fullday" href="#fullday">
+						Абонемент полного дня
+						<i class="fa fa-plus-square" aria-hidden="true"></i>
+						<i class="fa fa-minus-square s2" aria-hidden="true"></i>
+					</a>
+					<div class="answer1">
+						<p>
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint facilis aliquam expedita libero facere? Accusamus?
+						</p>
+					</div>
+				</div>
+				<div class="accordItem" id="halfday">
+					<a class="hulfday" href="#hulfday">
+						Абонемент сокращенного дня
+						<i class="fa fa-plus-square" aria-hidden="true"></i>
+						<i class="fa fa-minus-square s1" aria-hidden="true"></i>
+					</a>
+					<div class="answer2">
+						<p>
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint facilis aliquam expedita libero facere? Accusamus?
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<script src="js/scripts.min.js"></script>
 
 </body>
+
 </html>
