@@ -1,0 +1,334 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.card-wrap
+		.card
+			.slaiderContent
+				p
+					margin: 0 auto
+					padding: 0 10px
+					font-size: 1em
+	.timeWork
+		padding: 10px
+		p
+			font-size: 1.2em
+	.clock
+		top: 6px
+		left: 10px
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.timeWork
+		p
+			padding-left: 50px
+			font-size: 1.3em
+	header
+		padding-right: 0
+		padding-left: 20px
+	.heder-content
+		width: 80%
+	
+	.price-wrap
+		.accord
+			.accordItem
+				a
+					font-size: 1.35em
+	p.term
+		font-size: 1.3em
+
+
+			
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	#prog1
+		width: 90%
+	ul.priceFullday
+		padding: 10px 0
+		li
+			font-size: 1.1em
+			.cost
+				font-size: 1.1em 
+	.timeWork
+		p
+			padding-left: 50px
+			font-size: 1.1em
+	.price-wrap
+		grid-template-columns: 20% 1fr
+		.imgLeva
+			padding-left: 5px
+		.accord
+			padding: 0
+			.accordItem
+				a
+					padding: 10px 0
+					font-size: 1.1em
+					i
+						right: 8px
+						top: 16px
+	p.term
+		font-size: 1.2em
+	.clock
+		top: 25px
+		left: 10px
+
+	#navigation
+		ul
+			li
+				text-align: center
+				a
+					font-size: 1.2em
+	.main-container
+		.box-wrap
+			.box
+				.front
+					min-height: 260px
+				.back
+					min-height: 260px
+
+	.sci
+		flex-direction: row
+		bottom: 30px
+		right: 35%
+		li
+			margin-right: 15px	
+	header
+		grid-template-columns: 80px 1fr 80px
+		address
+			display: none
+	.headImg-wrap
+		grid-template-columns: 10% 1fr 10%
+		h2
+			font-size: 1.5em
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.card-wrap
+		.card
+			width: 250px
+			.slaiderContent
+				width: 250px
+				p
+					font-size: 0.91em
+					
+			.sliderText
+				h3
+					font-size: 1.7em
+				
+	.swiper-slide
+		width: 250px
+		&:nth-child(5)
+			.sliderText
+				h3
+					font-size: 1.4em
+	#prog1
+		h3
+			margin: 15px auto 8px
+			font-size: 1.1em
+		p.avp-p
+			padding: 0 8px 10px
+			font-size: 0.7em
+	#prog5
+		h3
+			font-size: 0.9em
+	p.term
+		font-size: 1em
+	.price-wrap
+		grid-template-columns: 1fr
+		.imgLeva
+			display: none
+	ul.priceFullday
+		li
+			font-size: 1.1em
+			.cost
+				font-size: 1.1em
+				i
+					font-size: 0.9em
+				span
+					font-size: 0.9em 
+	.main-container
+		.box-wrap
+			.box
+				.front
+					min-height: 260px
+				.back
+					min-height: 260px
+	.main-container
+		p
+			font-size: 1em
+			margin: 25px 10px
+	.sci
+		right: 28%
+	.heder-content
+		a.play
+			margin-top: 20px
+			padding: 10px 20px
+			letter-spacing: normal
+			font-size: 1em
+		p.description
+			font-size: 1.2em
+		h1
+			font-size: 1.8em
+			margin: 0
+			span
+				font-size: 1.8em
+	#toggle
+		right: 20px
+	.overlay
+		right: 20px
+	header
+		grid-template-columns: 80px 1fr 60px
+	.telephone
+		font-size: 0.9em
+	.headImg-wrap
+		grid-template-columns: 40px 1fr
+		.headImg
+			.lastImg
+				display: none
+	
+	/**/
+
+@media only screen and (max-width : 390px)
+	.foto-wrap
+		padding-left: 30px
+	#prog8
+		h3
+			font-size: 0.9em
+	.card-wrap
+		.card
+			width: 220px
+			.slaiderContent
+				width: 220px
+				p
+					font-size: 0.8em
+			.sliderText
+				h3
+					font-size: 1.6em
+	.swiper-slide
+		width: 220px
+		&:nth-child(5)
+			.sliderText
+				h3
+					font-size: 1.2em
+	.price-wrap
+		.accord
+			.accordItem
+				a
+					font-size: 1em
+	#navigation
+		ul
+			li
+				a
+					font-size: 1em
+	.main-container
+		padding: 15px
+		h2
+			margin: 30px 10px
+		.box-wrap
+			.box
+				&:nth-child(3)
+					.front.active
+						h3
+							font-size: 1.55em
+				.front
+					min-height: 280px
+				.back
+					min-height: 280px
+	.sci
+		right: 18%
+	.heder-content
+		h1
+			font-size: 1.5em
+		a.play
+			margin-top: 20px
+			padding: 8px 10px
+			font-size: 0.9em
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	.sci
+		right: 10%
+	.heder-content
+		p.description
+			font-size: 1.1em
+		h1
+			font-size: 1.5em
+		a.play
+			margin-top: 20px
+			padding: 8px 10px
+			font-size: 0.8em
+	.telephone
+		display: none
+	.main-container
+		p
+			font-size: 1em
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	.heder-content
+		h1
+			font-size: 2.6em
+			font-weight: 800
+			span
+				font-size: 1.85em
+		p.description
+			font-size: 1.7em
+			font-weight: 800
+			letter-spacing: 0.04em
+		
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	.main-container
+		h2
+			font-size: 2.9em
+	.heder-content
+		h1
+			font-size: 3em
+			font-weight: 800
+			span
+				font-size: 1.85em
+		p.description
+			font-size: 1.9em
+			font-weight: 800
+			letter-spacing: 0.04em
+	.card-wrap
+		.card
+			.slaiderContent
+				p
+					margin: 0 auto
+					padding: 0 10px
+					font-size: 1em
+	/**/
+
