@@ -32,24 +32,24 @@
 	<!-- Шапка сайта *****************************************-->
 	<div id="toggle"></div>
 	<div class="overlay"></div>
-<!-- Меню с навигацией по сайту *************************** -->
+	<!-- Меню с навигацией по сайту *************************** -->
 	<div id="navigation">
 		<ul>
 			<li class="menuLi"><a href="#about">О нас</a></li>
 			<li class="menuLi"><a href="#programms">Программы развития</a></li>
 			<li class="menuLi"><a href="#pedagogi">Наши педагоги</a></li>
 			<li class="menuLi"><a href="#price">Услуги и цены</a></li>
-			<li class="menuLi"><a href="#">Локации детского сада</a></li>
+			<li class="menuLi"><a href="#dopInfo">Дополнительная информация</a></li>
+			<li class="menuLi"><a href="#photo">Фотогалерея</a></li>
 			<li class="menuLi"><a href="#">Отзывы</a></li>
-			<li class="menuLi"><a href="#">Фотогалерея</a></li>
 			<li class="menuLi"><a href="#">Новости</a></li>
 			<li class="menuLi"><a href="#contact">Контакты</a></li>
 		</ul>
 	</div>
 
-	
+
 	<header>
-		<a href="#" class="logo"><img class="img-responsive" src="img/logo.png" alt="Детский сад Лева"><em>Лёва</em></a>
+		<a href="#about" class="logo"><img class="img-responsive" src="img/logo.png" alt="Детский сад Лева"><em>Лёва</em></a>
 		<div class="center-content">
 			<div class="telephone">
 				<i class="fa fa-mobile" aria-hidden="true"></i>
@@ -63,13 +63,14 @@
 		<div class="center-content">
 			<a href="#contact">
 				<address><i class="fa fa-map-marker" aria-hidden="true"></i>Вишерская улица, 3к2, <br>г. Санкт-Петербург
-				</address></a>
-			</div>
-		</header>
-		
-		<!-- Главный экран ************************************** -->
-		
-		
+				</address>
+			</a>
+		</div>
+	</header>
+
+	<!-- Главный экран ************************************** -->
+
+
 	<section class="banner">
 		<div class="wrap">
 			<div class="heder-content">
@@ -110,10 +111,11 @@
 		<p> &#9884; Развитие детей осуществляется с элементами методики Марии Монтессори, Бориса Павловича и Елены
 			Алексеевны Никитиных и программы комплексного развития ребенка «От рождения до школы», доработанной и улучшенной
 			нашими педагогами.</p>
-		<p class="last"> &#9884; У нас есть группы полного и неполного дня пребывания, где ребята получают драгоценный опыт общения и
+		<p class="last"> &#9884; У нас есть группы полного и неполного дня пребывания, где ребята получают драгоценный опыт
+			общения и
 			развития в доброжелательной атмосфере коллектива детей и взрослых.</P>
-			
-			<!-- Наши преимущества ************************************* -->
+
+		<!-- Наши преимущества ************************************* -->
 		<div class="headImg-wrap">
 			<div class="headImg">
 				<img src="img/leva/T1back.png" class="img-responsive" alt="Преимущества Детского сада Лёва">
@@ -160,7 +162,8 @@
 				<div class="front active">
 					<h3>Образовательные технологии</h3>
 				</div>
-				<div class="more"><i class="fa fa-info-circle" aria-hidden="true"></i>Подробнее...</div>
+				<div class="more"><i class="fa fa-info-circle" aria-hidden="true"></i>Подробнее...
+				</div>
 				<div class="back">
 					<div class="go-back">
 						<i class="fa fa-undo" aria-hidden="true"></i>
@@ -198,7 +201,7 @@
 					<div class="go-back">
 						<i class="fa fa-undo" aria-hidden="true"></i>
 						Назад</div>
-						<p>Игра - ведущий вид деятельности в дошкольном возрасте. Именно через нее ребенок развивается и познает мир.
+					<p>Игра - ведущий вид деятельности в дошкольном возрасте. Именно через нее ребенок развивается и познает мир.
 						У
 						нас нет скучных занятий!</p>
 				</div>
@@ -253,7 +256,15 @@
 
 	<!-- Программы развития -->
 	<section class="main-container">
-		<h2 id="programms">Направления развития детей</h2>
+		<div class="headImg-wrap">
+			<div class="headImg">
+				<img src="img/leva/L6.png" class="img-responsive" alt="Программы развития Детского сада Лёва">
+			</div>
+			<h2 id="programms">Направления развития детей</h2>
+			<div class="headImg">
+				<img src="img/leva/L6back.png" class="img-responsive lastImg" alt="Программы развития Детского сада Лёва">
+			</div>
+		</div>
 		<div class="card-wrap">
 			<div class="swiper-container">
 				<div class="swiper-wrapper">
@@ -261,72 +272,262 @@
 					<div class="swiper-slide">
 						<div class="card">
 							<div class="sliderText">
-								<h3>Программа 1</h3>
+								<h3>Развитие речи</h3>
 							</div>
 							<div class="slaiderContent">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, voluptates.elit. Numquam,
-									voluptates.elit. Numquam, voluptates.elit. Numquam, voluptates.elit. Numquam, voluptates.</p>
-								<a href="#">Подробнее...</a>
+								<p>Основная цель – развитие свободного общения ребенка со сверстниками и взрослыми.
+								</p>
+								<a class="popup-modal" href="#prog1">Подробнее...</a>
+								<div id="prog1" class="mfp-hide">
+									<h3>Развитие речи</h3>
+									<p class="avp-p"> &#9884;
+										Развитие речи предполагает овладение ребенком связной устной речи настолько, чтобы ребенок мог
+										свободно выразить свои мысли, чувства, желания на понятном для окружающих уровне. Мог рассказать о
+										чем-то (монолог), поддержать беседу (диалог).
+									</p>
+									<p class="avp-p"> &#9884;
+										Также на занятиях по развитию речи происходит обогащение словарного запаса детей через различные
+										игры, задания, разучивание потешек, чистоговорок, стихотворений. Ребёнок усваивает правила
+										словообразования и словоизменения. Дети составляют небольшие рассказы, придумывают новые сюжеты для
+										известных сказок. Развивается слуховое и зрительное внимание, память, грамматическая правильность
+										речи.
+									</p>
+									<p class="avp-p"> &#9884;
+										Чтение художественной литературы также способствует развитию речи, памяти и формированию позитивного
+										отношения к миру.
+									</p>
+									<p><a class="popup-modal-dismiss" href="#programms">Закрыть</a></p>
+								</div>
 							</div>
 						</div>
 					</div>
 					<div class="swiper-slide">
 						<div class="card">
 							<div class="sliderText">
-								<h3>Программа 2</h3>
+								<h3>Познавательное развитие</h3>
 							</div>
 							<div class="slaiderContent">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, voluptates.elit. Numquam,
-									voluptates.elit. Numquam, voluptates.elit. Numquam, voluptates.elit. Numquam, voluptates.</p>
-								<a href="#">Подробнее...</a>
+								<p>
+									Направлено на развитие любознательности, воображения, творчества, представления о себе и людях вокруг,
+									об окружающем мире, о свойствах различных предметов, о социокультурных ценностях.
+								</p>
+								<a class="popup-modal" href="#prog2">Подробнее...</a>
+								<div id="prog2" class="mfp-hide">
+									<h3>Познавательное развитие</h3>
+									<p class="avp-p"> &#9884;
+										<em>Формирование картины мира.</em> Ребенок расширяет кругозор, учится устанавливать простейшие
+										взаимосвязи в живой и неживой природе, знакомится с растительным и животным миром нашей планеты,
+										формирует бережное отношение к природе. У ребенка развивается любознательность, познавательная
+										активность и стремление познавать явления окружающего мира.
+									</p>
+									<p class="avp-p"> &#9884;
+										<em>Формирование представлений о себей.</em> Ребенок осваивает представления о себе – своем полном
+										имени, фамилии, возрасте, своих любимых занятиях, игрушках, о своих родных. Осознает свои умения,
+										желания. Осваивает умение отражать их в речи. Проявляет интерес к общению со сверстниками, понимает
+										элементарные особенности взаимоотношений с ними.
+									</p>
+									<p><a class="popup-modal-dismiss" href="#programms">Закрыть</a></p>
+								</div>
 							</div>
 						</div>
 					</div>
 					<div class="swiper-slide">
 						<div class="card">
 							<div class="sliderText">
-								<h3>Программа 3</h3>
+								<h3>Математические способности</h3>
 							</div>
 							<div class="slaiderContent">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, voluptates.elit. Numquam,
-									voluptates.elit. Numquam, voluptates.elit. Numquam, voluptates.elit. Numquam, voluptates.</p>
-								<a href="#">Подробнее...</a>
+								<p>Получение ребенком начальных математических знаний и умений стимулирует всестороннее развитие
+									малышей, формирует абстрактное мышление и логику.</p>
+								<a class="popup-modal" href="#prog3">Подробнее...</a>
+									<div id="prog3" class="mfp-hide">
+										<h3>Математические способности</h3>
+										<p class="avp-p"> &#9884;
+											Ребята знакомятся с цветом, формой, размером, количеством, учатся ориентироваться во времени и
+											пространстве, знакомятся с цифрами и логическими задачами, сравнивают, систематизируют, находят
+											лишнее. Развивают мышление, память, логику, самостоятельность, настойчивость. Совершенствуется
+											внимание, память и речь, что позволит ребёнку активно познавать и осваивать окружающий мир.
+											Занимательное путешествие в страну геометрических фигур и арифметических задач станет прекрасным
+											подспорьем в воспитании таких качеств, как любознательность, целеустремлённость и
+											организованность.
+										</p>
+										<p><a class="popup-modal-dismiss" href="#programms">Закрыть</a></p>
+									</div>
+								
 							</div>
 						</div>
 					</div>
 					<div class="swiper-slide">
 						<div class="card">
 							<div class="sliderText">
-								<h3>Программа 4</h3>
+								<h3>Сенсорное развитие</h3>
 							</div>
 							<div class="slaiderContent">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, voluptates.elit. Numquam,
-									voluptates.elit. Numquam, voluptates.elit. Numquam, voluptates.elit. Numquam, voluptates.</p>
-								<a href="#">Подробнее...</a>
+								<p>Играет огромную роль в раннем детстве, позволяет совершенствовать деятельность органов чувств,
+									накапливает представления об окружающем мире
+								</p>
+								<a class="popup-modal" href="#prog4">Подробнее...</a>
+									<div id="prog4" class="mfp-hide">
+										<h3>Сенсорное развитие</h3>
+										<p class="avp-p"> &#9884;
+											Цель играет огромную роль в раннем детстве, позволяет совершенствовать деятельность органов
+											чувств, накапливает представления об окружающем мире.
+										</p>
+										<p><a class="popup-modal-dismiss" href="#programms">Закрыть</a></p>
+									</div>
+								
 							</div>
 						</div>
 					</div>
 					<div class="swiper-slide">
 						<div class="card">
 							<div class="sliderText">
-								<h3>Программа 5</h3>
+								<h3>Экспериментирование</h3>
 							</div>
 							<div class="slaiderContent">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, voluptates.elit. Numquam,
-									voluptates.elit. Numquam, voluptates.elit. Numquam, voluptates.elit. Numquam, voluptates.</p>
-								<a href="#">Подробнее...</a>
+								<p>Развитие наблюдательности, пытливости ума, стремления к познанию мира, умение изобретать,
+									использовать не стандартные решения в трудных ситуациях, таким образом развивает творческую личность.
+								</p>
+								<a class="popup-modal" href="#prog5">Подробнее...</a>
+									<div id="prog5" class="mfp-hide">
+										<h3>Эксперементирование</h3>
+										<p class="avp-p"> &#9884;
+											Одно из направлений познавательного развития. Это эффективный метод познания окружающего мира.
+											Дети начинают принимать участие в совместных с воспитателем опытах. Проводят простейшие
+											исследования, которые помогают малышам обследовать предметы, свойства материалов, воды и воздуха.
+											Ребенок учится задавать вопросы, искать на них ответы, строить догадки и предположения, наблюдать
+											и делать выводы, проводить простые эксперименты, отстаивать полученный результат.
+										</p>
+										<p><a class="popup-modal-dismiss" href="#programms">Закрыть</a></p>
+									</div>
+								
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="card">
+							<div class="sliderText">
+								<h3>Художественно- эстетическое развитие</h3>
+							</div>
+							<div class="slaiderContent">
+								<p>Обеспечение эмоционального благополучия каждого ребенка, развитие его духовного, творческого
+									потенциала, создание условий для его самореализации. Воспитание гармонически развитой личности.
+								</p>
+								<a class="popup-modal" href="#prog6">Подробнее...</a>
+								<div id="prog6" class="mfp-hide">
+									<h3>Художественно- эстетическое развитие</h3>
+									<p class="avp-p"> &#9884;
+										<em>Лепка/апликация.</em>У ребенка формируется умение лепить предметы, передавать их характерные
+										особенности. Малыш учится составлять композиции из бумаги, развивается чувство цвета и пропорции.
+										Возникает интерес к творческой деятельности, самовыражению.
+									</p>
+									<p class="avp-p"> &#9884;
+										<em>Рисование.</em>
+										Ребенок учится рисовать карандашами, восковыми мелками, гуашью и акварелью. Мы используем
+										нетрадиционные техники рисования. Формируем эстетические представления, развиваем образное мышление
+										и воображение. Знакомимся с видами изобразительного искусства.
+									</p>
+									<p class="avp-p"> &#9884;
+										<em>Музыка.</em>
+										На занятия мы учимся слушать музыку и понимать характер музыкальных произведений, играть на простых
+										музыкальных инструментах, двигаться под музыку, пробуем петь и танцевать.
+									</p>
+									<p><a class="popup-modal-dismiss" href="#programms">Закрыть</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="card">
+							<div class="sliderText">
+								<h3>Физическое развитие</h3>
+							</div>
+							<div class="slaiderContent">
+								<p>Гармоничное физическое развитие, формирование интереса к занятиям сортом, формирование основ
+									здорового образа жизни.</p>
+								<a class="popup-modal" href="#prog7">Подробнее...</a>
+									<div id="prog7" class="mfp-hide">
+										<h3>Физическое развитие</h3>
+										<p class="avp-p"> &#9884;
+											Ребенок приобретает навыки двигательной деятельности, развивает координацию, ловкость, гибкость,
+											крупную и мелкую моторику рук, знакомится с некоторыми видами спорта, играет в подвижные игры,
+											узнает основы безопасного поведения в играх, получает элементарные знания в области гигиены,
+											испытывает положительные эмоции от движения.
+										</p>
+										<p><a class="popup-modal-dismiss" href="#programms">Закрыть</a></p>
+									</div>
+								
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="card">
+							<div class="sliderText">
+								<h3>Социально- коммуникативное развитие</h3>
+							</div>
+							<div class="slaiderContent">
+								<p>Позитивная социализация детей дошкольного возраста, приобщение детей к социокультурным нормам,
+									традициям семьи, общества, государства.</p>
+								<a class="popup-modal" href="#prog8">Подробнее...</a>
+									<div id="prog8" class="mfp-hide">
+										<h3>Социально- коммуникативное развитие</h3>
+										<p class="avp-p"> &#9884;
+											Ребенок взаимодействует со взрослыми и детьми, соблюдая правила и нормы поведения. Развивается
+											отзывчивость, сопереживание, целенаправленность действий, самостоятельность. Ребенок знакомится с
+											правилами безопасного поведения в быту, на природе, в обществе, игра становится сложнее и
+											многообразней, через игровую деятельность осваивает различные социальные роли, знакомится с трудом
+											взрослых, усваивает моральные и нравственные нормы и ценности, традиции, принятые в семье и
+											обществе.
+										</p>
+										<p><a class="popup-modal-dismiss" href="#programms">Закрыть</a></p>
+									</div>
+								
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="card">
+							<div class="sliderText">
+								<h3>Конструирование</h3>
+							</div>
+							<div class="slaiderContent">
+								<p>Развитие воображения, фантазии, творчества и логического и пространственного мышления, мелкой
+									моторики и речи.</p>
+								<a class="popup-modal" href="#prog9">Подробнее...</a>
+									<div id="prog9" class="mfp-hide progCard">
+										<h3>Конструирование</h3>
+										<p class="avp-p"> &#9884;
+											Ребенок учится сравнивать предметы между собой, находить части предметов и соединять их в целое,
+											строить конструкции по схемам и рисункам, используя воображение и фантазию. Крупные блоки,
+											деревянные и пластмассовые кубики разных цветов, форм и размеров, различные виды конструктора,
+											природный и бросовый материал, бумага – все служит одной цели-развитию пространственного мышления,
+											фантазии и логики.
+										</p>
+										<p><a class="popup-modal-dismiss" href="#programms">Закрыть</a></p>
+									</div>
+							
 							</div>
 						</div>
 					</div>
 
 				</div>
+				<!-- <div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div> -->
 			</div>
 		</div>
 	</section>
 
 	<!-- Наши педагоги -->
 	<section class="main-container">
-		<h2 id="pedagogi">Наши педагоги</h2>
+		<div class="headImg-wrap">
+			<div class="headImg">
+				<img src="img/leva/T2.png" class="img-responsive" alt="Педагоги Детского сада Лёва">
+			</div>
+			<h2 id="pedagogi">Наши педагоги</h2>
+			<div class="headImg">
+				<img src="img/leva/T2back.png" class="img-responsive lastImg" alt="Педагоги Детского сада Лёва">
+			</div>
+		</div>
 		<div class="box-wrap">
 			<div class="boxPed">
 				<div class="imgBox">
@@ -375,9 +576,70 @@
 						<i class="fa fa-minus-square s2" aria-hidden="true"></i>
 					</a>
 					<div class="answer1">
-						<p>
-							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint facilis aliquam expedita libero facere? Accusamus?
-						</p>
+
+						<div class="clock">
+							<i class="fa fa-clock-o" aria-hidden="true"></i>
+						</div>
+						<div class="timeWork">
+							<p>Время пребывания в детском саду с 7:30 до 19:30</p>
+						</div>
+						<ul class="priceFullday">
+							<li>
+								<div class="day">
+									Полный месяц
+								</div>
+								<div class="cost">
+									<i class="fa fa-rub" aria-hidden="true"></i>
+									<span>21000</span>
+								</div>
+							</li>
+							<li>
+								<div class="day">
+									16 дней в месяц
+								</div>
+								<div class="cost">
+									<i class="fa fa-rub" aria-hidden="true"></i>
+									<span>19000</span>
+								</div>
+							</li>
+							<li>
+								<div class="day">
+									12 дней в месяц
+								</div>
+								<div class="cost">
+									<i class="fa fa-rub" aria-hidden="true"></i>
+									<span>15000</span>
+								</div>
+							</li>
+							<li>
+								<div class="day">
+									8 дней в месяц
+								</div>
+								<div class="cost">
+									<i class="fa fa-rub" aria-hidden="true"></i>
+									<span>10500</span>
+								</div>
+							</li>
+							<li>
+								<div class="day">
+									4 дня в месяц
+								</div>
+								<div class="cost">
+									<i class="fa fa-rub" aria-hidden="true"></i>
+									<span>6000</span>
+								</div>
+							</li>
+							<li>
+								<div class="day">
+									Разовое посещение
+								</div>
+								<div class="cost">
+									<i class="fa fa-rub" aria-hidden="true"></i>
+									<span>1700</span>
+								</div>
+							</li>
+						</ul>
+
 					</div>
 				</div>
 				<div class="accordItem" id="halfday">
@@ -387,14 +649,178 @@
 						<i class="fa fa-minus-square s1" aria-hidden="true"></i>
 					</a>
 					<div class="answer2">
-						<p>
-							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint facilis aliquam expedita libero facere? Accusamus?
-						</p>
+						<div class="clock">
+							<i class="fa fa-clock-o" aria-hidden="true"></i>
+						</div>
+						<div class="timeWork">
+							<p>Время пребывания в детском саду с 7:30 до 13:00 или с 15:00 до 19:30</p>
+						</div>
+						<ul class="priceFullday">
+							<li>
+								<div class="day">
+									Полный месяц
+								</div>
+								<div class="cost">
+									<i class="fa fa-rub" aria-hidden="true"></i>
+									<span>13500</span>
+								</div>
+							</li>
+							<li>
+								<div class="day">
+									16 дней в месяц
+								</div>
+								<div class="cost">
+									<i class="fa fa-rub" aria-hidden="true"></i>
+									<span>11000</span>
+								</div>
+							</li>
+							<li>
+								<div class="day">
+									12 дней в месяц
+								</div>
+								<div class="cost">
+									<i class="fa fa-rub" aria-hidden="true"></i>
+									<span>9000</span>
+								</div>
+							</li>
+							<li>
+								<div class="day">
+									8 дней в месяц
+								</div>
+								<div class="cost">
+									<i class="fa fa-rub" aria-hidden="true"></i>
+									<span>7000</span>
+								</div>
+							</li>
+							<li>
+								<div class="day">
+									4 дня в месяц
+								</div>
+								<div class="cost">
+									<i class="fa fa-rub" aria-hidden="true"></i>
+									<span>5000</span>
+								</div>
+							</li>
+							<li>
+								<div class="day">
+									Разовое посещение
+								</div>
+								<div class="cost">
+									<i class="fa fa-rub" aria-hidden="true"></i>
+									<span>1400</span>
+								</div>
+							</li>
+							<li>
+								<div class="day">
+									Адаптация (за час)
+								</div>
+								<div class="cost">
+									<i class="fa fa-rub" aria-hidden="true"></i>
+									<span>200 (час)</span>
+								</div>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
+		<p class="term"><i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+			При оплате абонемента на неполный месяц Вы можете самостоятельно определить дни посещения, удобные Вам <i
+				class="fa fa-exclamation-circle" aria-hidden="true"></i>
+		</p>
 	</section>
+
+	<!-- Дополнительная информаци ********************************* -->
+	<section class="main-container">
+		<div class="headImg-wrap">
+			<div class="headImg">
+				<img src="img/leva/T3back.png" class="img-responsive" alt="Информация Детского сада Лёва">
+			</div>
+			<h2 id="dopInfo">Дополнительная информация</h2>
+			<div class="headImg">
+				<img src="img/leva/T3.png" class="img-responsive lastImg" alt="Информация Детского сада Лёва">
+			</div>
+		</div>
+		<div class="box-wrap">
+
+			<div class="dopInfo">
+				<h3>Режим дня</h3>
+				<div class="cardInfoImg">
+					<a class="image-popup-no-margins" href="img/dopinfo/day.jpg">
+						<img class="img-responsive" src="img/dopinfo/day.jpg" alt="Режим дня детского сада Лёва">
+					</a>
+				</div>
+			</div>
+			<div class="dopInfo">
+				<h3>Сетка занятий</h3>
+				<div class="cardInfoImg">
+					<a class="image-popup-no-margins" href="img/dopinfo/knol.jpg">
+						<img class="img-responsive" src="img/dopinfo/knol.jpg" alt="Сетка занятий детского сада Лёва">
+					</a>
+				</div>
+			</div>
+			<div class="dopInfo">
+				<h3>Документы на прием</h3>
+				<div class="cardInfoImg">
+					<a class="image-popup-no-margins" href="img/dopinfo/docs.jpg">
+						<img class="img-responsive" src="img/dopinfo/docs.jpg" alt="Документы для приема в детский сад Лёва">
+					</a>
+				</div>
+			</div>
+
+		</div>
+		
+	</section>
+
+	<!-- Наши фотографии -->
+	<section class="main-container">
+		<h2 id="photo">Наши фотографии</h2>
+		<div class="box-wrap">
+							
+			<div class="foto-wrap">
+				
+				<div style="margin: auto" class="fotorama" data-nav="thumbs" data-maxwidth="90%" data-minwidth="200" data-maxheight=100%" data-transition="slide" data-keyboard="true" data-arrows="true" data-click="true" data-swipe="true" data-loop="true" data-allowfullscreen="native" data-fit="cover" data-autoplay="3000">
+					<img class="img-responsive" src="img/d-sad/1.jpg">
+					<img class="img-responsive" src="img/d-sad/2.jpg">
+					<img class="img-responsive" src="img/d-sad/3.jpg">
+					<img class="img-responsive" src="img/d-sad/4.jpg">
+					<img class="img-responsive" src="img/d-sad/5.jpg">
+					<img class="img-responsive" src="img/d-sad/6.jpg">
+					<img class="img-responsive" src="img/d-sad/7.jpg">
+					<img class="img-responsive" src="img/d-sad/8.jpg">
+					<img class="img-responsive" src="img/d-sad/9.jpg">
+					<img class="img-responsive" src="img/d-sad/10.jpg">
+					<img class="img-responsive" src="img/d-sad/11.jpg">
+					<img class="img-responsive" src="img/d-sad/12.jpg">
+					<img class="img-responsive" src="img/d-sad/13.jpg">
+					<img class="img-responsive" src="img/d-sad/14.jpg">
+					<img class="img-responsive" src="img/d-sad/15.jpg">
+					<img class="img-responsive" src="img/d-sad/16.jpg">
+					<img class="img-responsive" src="img/d-sad/17.jpg">
+					<img class="img-responsive" src="img/d-sad/18.jpg">
+					<img class="img-responsive" src="img/d-sad/19.jpg">
+					<img class="img-responsive" src="img/d-sad/20.jpg">
+					<img class="img-responsive" src="img/d-sad/21.jpg">
+					<img class="img-responsive" src="img/d-sad/22.jpg">
+					<img class="img-responsive" src="img/d-sad/23.jpg">
+					<img class="img-responsive" src="img/d-sad/24.jpg">
+					<img class="img-responsive" src="img/d-sad/25.jpg">
+					<img class="img-responsive" src="img/d-sad/26.jpg">
+					<img class="img-responsive" src="img/d-sad/27.jpg">
+					<img class="img-responsive" src="img/d-sad/28.jpg">
+					<img class="img-responsive" src="img/d-sad/29.jpg">
+					<img class="img-responsive" src="img/d-sad/30.jpg">
+					<img class="img-responsive" src="img/d-sad/31.jpg">
+					<img class="img-responsive" src="img/d-sad/32.jpg">
+					<img class="img-responsive" src="img/d-sad/33.jpg">
+				</div>
+			</div>
+		</div>
+
+	</section>	
+
+
+
 
 	<script src="js/scripts.min.js"></script>
 
