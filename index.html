@@ -29,6 +29,8 @@
 </head>
 
 <body>
+	<div id="progressbar"></div>
+	<div id="scrollPath"></div>
 	<!-- Шапка сайта *****************************************-->
 	<div id="toggle"></div>
 	<div class="overlay"></div>
@@ -41,7 +43,7 @@
 			<li class="menuLi"><a href="#price">Услуги и цены</a></li>
 			<li class="menuLi"><a href="#dopInfo">Дополнительная информация</a></li>
 			<li class="menuLi"><a href="#photo">Фотогалерея</a></li>
-			<li class="menuLi"><a href="#">Отзывы</a></li>
+			<!-- <li class="menuLi"><a href="#">Отзывы</a></li> -->
 			<li class="menuLi"><a href="#">Новости</a></li>
 			<li class="menuLi"><a href="#contact">Контакты</a></li>
 		</ul>
@@ -71,7 +73,7 @@
 	<!-- Главный экран ************************************** -->
 
 
-	<section class="banner">
+	<section id="sec" class="banner">
 		<div class="wrap">
 			<div class="heder-content">
 				<h1>Частный Детский сад <br><span>"Лёва"</span></h1>
@@ -85,7 +87,7 @@
 
 		<!-- Социальные кнопки на панели справа ***************************-->
 		<ul class="sci">
-			<li><a href="#"><i class="fa fa-vk"></i></a></li>
+			<li><a href="https://vk.com/leva_shushary"><i class="fa fa-vk"></i></a></li>
 			<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
 			<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
 			<li><a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
@@ -102,7 +104,7 @@
 	<Section class="main-container">
 		<h2 id="about">О нас</h2>
 
-		<P> &#9884; Частный детский сад <strong>«Лёва»</strong> рассчитан на 16 детей. Малочисленные группы позволяют
+		<P> &#9884; Частный детский сад <strong>«Лёва»</strong> рассчитан 		на 12 детей. Малочисленные группы позволяют
 			уделить максимальное внимание каждому ребенку и применить индивидуальный подход с учетом его потребностей. Такой
 			подход позволяет детям находиться в уютной и доброжелательной атмосфере, что сокращает срок адаптации деток в
 			новых для него условиях.</P>
@@ -746,7 +748,7 @@
 			<div class="dopInfo">
 				<h3>Режим дня</h3>
 				<div class="cardInfoImg">
-					<a class="image-popup-no-margins" href="img/dopinfo/day.jpg">
+					<a class="image-popup-fit-width" href="img/dopinfo/day.jpg">
 						<img class="img-responsive" src="img/dopinfo/day.jpg" alt="Режим дня детского сада Лёва">
 					</a>
 				</div>
@@ -754,7 +756,7 @@
 			<div class="dopInfo">
 				<h3>Сетка занятий</h3>
 				<div class="cardInfoImg">
-					<a class="image-popup-no-margins" href="img/dopinfo/knol.jpg">
+					<a class="image-popup-fit-width" href="img/dopinfo/knol.jpg">
 						<img class="img-responsive" src="img/dopinfo/knol.jpg" alt="Сетка занятий детского сада Лёва">
 					</a>
 				</div>
@@ -762,7 +764,7 @@
 			<div class="dopInfo">
 				<h3>Документы на прием</h3>
 				<div class="cardInfoImg">
-					<a class="image-popup-no-margins" href="img/dopinfo/docs.jpg">
+					<a class="image-popup-fit-width" href="img/dopinfo/docs.jpg">
 						<img class="img-responsive" src="img/dopinfo/docs.jpg" alt="Документы для приема в детский сад Лёва">
 					</a>
 				</div>
@@ -819,8 +821,66 @@
 
 	</section>	
 
+	<!-- Форма обратной связи -->
+	<section class="main-container">
+		<h2 id="contact">Контакты</h2>
+		<div class="bg-form">
 
+			<div class="box-wrap gridForm">
+				<div class="imgForm">
+					<img class="img-responsive" src="img/leva.png" alt="Контакты детского сада Лёва">
+				</div>
+				<div class="mainForm">
+					<h3>Напишите нам</h3>
+					<form id="mainForm" action="post">
+						<div class="input-field">
+							<input type="text" name="name" required>
+							<label for="name">Ваше имя</label>
+						</div>
+						<div class="input-field">
+							<input type="email" name="email" required>
+							<label for="name">Почта</label>
+						</div>
+						<div class="input-field">
+							<input type="tel" name="tel" required>
+							<label for="name">Телефон</label>
+						</div>
+						<div class="input-field">
+							<textarea name="text" cols="30" rows="4" required></textarea>
+							<label for="name">Ваш вопрос</label>
+						</div>
+						<input class="btn" type="submit" name="btn" value="Отправить">
+					</form>
+				</div>
+				
+			</div>
+		</div>
+	</section>
 
+	<!-- Всплывающая форма -->
+	<div class="sidebar-contact">
+		<div class="toggleForm">
+			<i class="fa fa-envelope" aria-hidden="true"></i>
+		</div>
+		<div class="toggleFormX active">
+			<i class="fa fa-times-circle" aria-hidden="true"></i>
+		</div>
+		<div class="levaForm">
+			<img src="img/logo.png" alt="Детский сад Лёва" class="img-responsive">
+		</div>
+		<h3>Напишите нам</h3>
+		<form id="sideForm" action="post">
+			<input type="text" name="name" required placeholder="
+			Ваше имя">
+			<input type="email" name="email" required placeholder="
+			Почта">
+			<input type="tel" name="tel" required placeholder="
+			Телефон">
+			<textarea name="text" cols="30" rows="4" required placeholder="
+			Задайте Ваш вопрос и мы Вам ответим"></textarea>
+			<input class="btn" type="submit" name="btn" value="Отправить">
+		</form>
+	</div>
 
 	<script src="js/scripts.min.js"></script>
 

@@ -19,6 +19,26 @@ $(document).ready(function () {
 		$('#navigation').removeClass('active')
 	})
 });
+$(document).ready(function () {
+	$('.toggleForm').click(function () {
+		$('.sidebar-contact').addClass('active')
+		$('.toggleFormX').removeClass('active')
+	})
+});
+$(document).ready(function () {
+	$('.toggleFormX').click(function () {
+		$('.sidebar-contact').removeClass('active')
+		$('.toggleFormX').addClass('active')
+	})
+});
+
+// Для скроллбара
+let progress = document.getElementById('progressbar');
+let totalHeight = document.body.scrollHeight - window.innerHeight;
+window.onscroll = function () {
+	let progressHeight = (window.pageYOffset / totalHeight) * 100;
+	progress.style.height = progressHeight + "%";
+}
 
 // Для аккордеона с ценами
 $(document).ready(function () {
@@ -126,28 +146,6 @@ function toggleV() {
 
 // Свайпер в разделе программы развития*********************
 $(document).ready(function () {
-// Для галереи в разделе наши фотографии
-	// var galleryThumbs = new Swiper1('.gallery-thumbs', {
-	// 	spaceBetween: 10,
-	// 	slidesPerView: 4,
-	// 	loop: true,
-	// 	freeMode: true,
-	// 	loopedSlides: 5, //looped slides should be the same
-	// 	watchSlidesVisibility: true,
-	// 	watchSlidesProgress: true,
-	// });
-	// var galleryTop = new Swiper2('.gallery-top', {
-	// 	spaceBetween: 10,
-	// 	loop:true,
-	// 	loopedSlides: 5, //looped slides should be the same
-	// 	navigation: {
-	// 		nextEl: '.swiper-button-next',
-	// 		prevEl: '.swiper-button-prev',
-	// 	},
-	// 	thumbs: {
-	// 		swiper: galleryThumbs,
-	// 	},
-	// });
 
 	var swiper = new Swiper('.swiper-container', {
 		effect: 'coverflow',
@@ -192,8 +190,8 @@ $(document).ready(function () {
 	})
 });
 
-// $('#sec').mousemove(function (e) {
-// 	var movX = (e.pageX * -1 / 25);
-// 	var movY = (e.pageY * -1 / 25);
+// $('#sec').mousemove(function (d) {
+// 	var movX = (d.pageX * -1 / 35);
+// 	var movY = (d.pageY * -1 / 35);
 // 	$(this).css('background-position', movX + "px " + movY + "px");
-// })
+// });
