@@ -5,9 +5,10 @@
 
 	<meta charset="utf-8">
 
-	<title>"Лева" частный детский сад</title>
-	<meta name="description" content="">
-
+	<title>Частный детский сад "Лёва"</title>
+	<meta name="description" content="Частный детский сад Лёва в п. Шушары. Набор детей от 1 года до 6 лет. Присмотр и уход за детьми посуточно">
+	<meta name="keywords" content="Частный детский сад Лёва Шушары. Присмотр и уход за детьми от 1 года до 6 лет">
+	
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
@@ -29,6 +30,7 @@
 </head>
 
 <body>
+	<div class="scrollTop" onclick="scrollToTop()"><i class="fa fa-arrow-up" aria-hidden="true"></i></div>
 	<div id="progressbar"></div>
 	<div id="scrollPath"></div>
 	<!-- Шапка сайта *****************************************-->
@@ -37,15 +39,15 @@
 	<!-- Меню с навигацией по сайту *************************** -->
 	<div id="navigation">
 		<ul>
-			<li class="menuLi"><a href="#about">О нас</a></li>
-			<li class="menuLi"><a href="#programms">Программы развития</a></li>
-			<li class="menuLi"><a href="#pedagogi">Наши педагоги</a></li>
-			<li class="menuLi"><a href="#price">Услуги и цены</a></li>
-			<li class="menuLi"><a href="#dopInfo">Дополнительная информация</a></li>
-			<li class="menuLi"><a href="#photo">Фотогалерея</a></li>
+			<li class="menuLi"><a href="#about" data-text="О нас">О нас</a></li>
+			<li class="menuLi"><a href="#programms" data-text="Программы развития">Программы развития</a></li>
+			<li class="menuLi"><a href="#pedagogi" data-text="Наши педагоги">Наши педагоги</a></li>
+			<li class="menuLi"><a href="#price" data-text="Услуги и цены">Услуги и цены</a></li>
+			<li class="menuLi"><a href="#dopInfo" data-text="Доболнительная информация">Дополнительная информация</a></li>
+			<li class="menuLi"><a href="#photo" data-text="Фотогалерея">Фотогалерея</a></li>
 			<!-- <li class="menuLi"><a href="#">Отзывы</a></li> -->
-			<li class="menuLi"><a href="#">Новости</a></li>
-			<li class="menuLi"><a href="#contact">Контакты</a></li>
+			<li class="menuLi"><a href="news.html" data-text="В гости к Лёве">В гости к Лёве</a></li>
+			<li class="menuLi"><a href="#contact" data-text="Контакты">Контакты</a></li>
 		</ul>
 	</div>
 
@@ -55,11 +57,11 @@
 		<div class="center-content">
 			<div class="telephone">
 				<i class="fa fa-mobile" aria-hidden="true"></i>
-				<strong>+7 (960) 231-08-55</strong>
+				<strong><a href="tel:+79602310855">+7 (960) 231-08-55</a></strong>
 			</div>
 			<div class="telephone">
 				<i class="fa fa-mobile" aria-hidden="true"></i>
-				<strong>+7 (967) 359-63-97</strong>
+				<strong><a href="tel:+79673596397">+7 (967) 359-63-97</a></strong>
 			</div>
 		</div>
 		<div class="center-content">
@@ -76,7 +78,8 @@
 	<section id="sec" class="banner">
 		<div class="wrap">
 			<div class="heder-content">
-				<h1>Частный Детский сад <br><span>"Лёва"</span></h1>
+				<h1 class="wow fadeInUp
+				">Частный Детский сад <br><span>"Лёва"</span></h1>
 				<p class="description">Внимательные и заботливые педагоги рады каждому малышу!</p>
 				<a href="#" class="play" onclick="toggleV()">Смотреть видео<i class="fa fa-play-circle-o"
 						aria-hidden="true"></i></a>
@@ -88,9 +91,9 @@
 		<!-- Социальные кнопки на панели справа ***************************-->
 		<ul class="sci">
 			<li><a href="https://vk.com/leva_shushary"><i class="fa fa-vk"></i></a></li>
-			<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-			<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-			<li><a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
+			<li><a href="https://www.instagram.com/ds_leva?r=nametag"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+			<li><a href="https://www.facebook.com/100564245015194"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+			<!-- <li><a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a></li> -->
 		</ul>
 	</section>
 
@@ -102,7 +105,7 @@
 
 	<!-- О нас **********************************************-->
 	<Section class="main-container">
-		<h2 id="about">О нас</h2>
+		<h2 id="about" class=" wow flipInY" data-wow-offset="70">О нас</h2>
 
 		<P> &#9884; Частный детский сад <strong>«Лёва»</strong> рассчитан 		на 12 детей. Малочисленные группы позволяют
 			уделить максимальное внимание каждому ребенку и применить индивидуальный подход с учетом его потребностей. Такой
@@ -119,11 +122,11 @@
 
 		<!-- Наши преимущества ************************************* -->
 		<div class="headImg-wrap">
-			<div class="headImg">
+			<div class="headImg wow fadeInLeft" data-wow-offset="80">
 				<img src="img/leva/T1back.png" class="img-responsive" alt="Преимущества Детского сада Лёва">
 			</div>
-			<h2>Наши преимущества</h2>
-			<div class="headImg">
+			<h2 class="wow fadeInUp">Наши преимущества</h2>
+			<div class="headImg wow fadeInRight" data-wow-offset="80">
 				<img src="img/leva/T1.png" class="img-responsive lastImg" alt="Преимущества Детского сада Лёва">
 			</div>
 		</div>
@@ -259,11 +262,11 @@
 	<!-- Программы развития -->
 	<section class="main-container">
 		<div class="headImg-wrap">
-			<div class="headImg">
+			<div class="headImg wow fadeInLeft" data-wow-offset="50">
 				<img src="img/leva/L6.png" class="img-responsive" alt="Программы развития Детского сада Лёва">
 			</div>
-			<h2 id="programms">Направления развития детей</h2>
-			<div class="headImg">
+			<h2 id="programms" class="wow fadeInUp">Направления развития детей</h2>
+			<div class="headImg wow fadeInRight" data-wow-offset="50">
 				<img src="img/leva/L6back.png" class="img-responsive lastImg" alt="Программы развития Детского сада Лёва">
 			</div>
 		</div>
@@ -522,11 +525,11 @@
 	<!-- Наши педагоги -->
 	<section class="main-container">
 		<div class="headImg-wrap">
-			<div class="headImg">
+			<div class="headImg wow fadeInLeft">
 				<img src="img/leva/T2.png" class="img-responsive" alt="Педагоги Детского сада Лёва">
 			</div>
-			<h2 id="pedagogi">Наши педагоги</h2>
-			<div class="headImg">
+			<h2 id="pedagogi" class="wow fadeInUp">Наши педагоги</h2>
+			<div class="headImg wow fadeInRight">
 				<img src="img/leva/T2back.png" class="img-responsive lastImg" alt="Педагоги Детского сада Лёва">
 			</div>
 		</div>
@@ -568,7 +571,7 @@
 		<h2 id="price">Абонементы и цены</h2>
 		<div class="price-wrap">
 			<div class="imgLeva">
-				<img src="img/leva/L1.png" alt="Цены детский сад Лева" class="img-responsive">
+				<img src="img/leva/L1.png" alt="Цены детский сад Лева" class="img-responsive wow flipInY" data-wow-offset="150">
 			</div>
 			<div class="accord">
 				<div class="accordItem" id="fullday">
@@ -727,19 +730,18 @@
 			</div>
 		</div>
 		<p class="term"><i class="fa fa-exclamation-circle" aria-hidden="true"></i>
-			При оплате абонемента на неполный месяц Вы можете самостоятельно определить дни посещения, удобные Вам <i
-				class="fa fa-exclamation-circle" aria-hidden="true"></i>
+			При оплате абонемента на неполный месяц возможно выбрать те дни посещения, в которые у детского сада имеются свободные места. Количество посещений должно расходоваться в рамках календарного месяца. Возможность переноса занятий на следующий месяц отсутствует.
 		</p>
 	</section>
 
 	<!-- Дополнительная информаци ********************************* -->
 	<section class="main-container">
 		<div class="headImg-wrap">
-			<div class="headImg">
+			<div class="headImg wow fadeInLeft" data-wow-offset="80">
 				<img src="img/leva/T3back.png" class="img-responsive" alt="Информация Детского сада Лёва">
 			</div>
-			<h2 id="dopInfo">Дополнительная информация</h2>
-			<div class="headImg">
+			<h2 id="dopInfo" class="wow fadeInUp" data-wow-offset="50">Дополнительная информация</h2>
+			<div class="headImg wow fadeInRight" data-wow-offset="80">
 				<img src="img/leva/T3.png" class="img-responsive lastImg" alt="Информация Детского сада Лёва">
 			</div>
 		</div>
@@ -749,7 +751,7 @@
 				<h3>Режим дня</h3>
 				<div class="cardInfoImg">
 					<a class="image-popup-fit-width" href="img/dopinfo/day.jpg">
-						<img class="img-responsive" src="img/dopinfo/day.jpg" alt="Режим дня детского сада Лёва">
+						<img class="img-responsive wow flipInY" src="img/dopinfo/day.jpg" alt="Режим дня детского сада Лёва">
 					</a>
 				</div>
 			</div>
@@ -757,7 +759,7 @@
 				<h3>Сетка занятий</h3>
 				<div class="cardInfoImg">
 					<a class="image-popup-fit-width" href="img/dopinfo/knol.jpg">
-						<img class="img-responsive" src="img/dopinfo/knol.jpg" alt="Сетка занятий детского сада Лёва">
+						<img class="img-responsive wow flipInY" src="img/dopinfo/knol.jpg" alt="Сетка занятий детского сада Лёва">
 					</a>
 				</div>
 			</div>
@@ -765,7 +767,7 @@
 				<h3>Документы на прием</h3>
 				<div class="cardInfoImg">
 					<a class="image-popup-fit-width" href="img/dopinfo/docs.jpg">
-						<img class="img-responsive" src="img/dopinfo/docs.jpg" alt="Документы для приема в детский сад Лёва">
+						<img class="img-responsive wow flipInY" src="img/dopinfo/docs.jpg" alt="Документы для приема в детский сад Лёва">
 					</a>
 				</div>
 			</div>
@@ -821,18 +823,51 @@
 
 	</section>	
 
-	<!-- Форма обратной связи -->
+	<!-- Контакты Форма обратной связи -->
 	<section class="main-container">
 		<h2 id="contact">Контакты</h2>
+		<div class="box-wrap">
+			<div class="contactdatta wow fadeInLeft" data-wow-offset="100">
+				<h4>Адрес</h4>
+				<address><i class="fa fa-map-marker" aria-hidden="true"></i>Вишерская улица, 3к2, <br>г. Санкт-Петербург
+				</address>
+			
+				<h4>Телефоны для связи</h4>
+				<div class="telephone dow">
+					<i class="fa fa-mobile down" aria-hidden="true"></i>
+					<strong><a href="tel:+79602310855">+7 (960) 231-08-55</a></strong>
+				</div>
+				<div class="telephone dow">
+					<i class="fa fa-mobile down" aria-hidden="true"></i>
+					<strong><a href="tel:+79673596397">+7 (967) 359-63-97</a></strong>
+				</div>
+
+				<h4>Режим работы</h4>
+				<p class="dow">
+					<i class="fa fa-clock-o down" aria-hidden="true"></i>
+					Понедельник - Пятница <br>
+					с 7:30 до 19:30
+					
+				</p>
+			</div>
+			<div class="map wow fadeInRight" data-wow-offset="100">
+				<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A43e3bbc453817a9820df23f61ec0768b7e865c5f994b3059fb91ce7ec8e9cec4&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+			</div>
+		</div>
 		<div class="bg-form">
 
 			<div class="box-wrap gridForm">
 				<div class="imgForm">
-					<img class="img-responsive" src="img/leva.png" alt="Контакты детского сада Лёва">
+					<img class="img-responsive wow flipInY" data-wow-offset="150" src="img/leva.png" alt="Контакты детского сада Лёва">
 				</div>
 				<div class="mainForm">
 					<h3>Напишите нам</h3>
-					<form id="mainForm" action="post">
+					<form id="mainForm">
+						<!-- Hidden Required Fields -->
+						<input type="hidden" name="project_name" value="Детский сад ЛЁВА">
+						<input type="hidden" name="admin_email" value="beam@list.ru">
+						<input type="hidden" name="form_subject" value="Лёва. Основная форма">
+						<!-- END Hidden Required Fields -->
 						<div class="input-field">
 							<input type="text" name="name" required>
 							<label for="name">Ваше имя</label>
@@ -842,7 +877,7 @@
 							<label for="name">Почта</label>
 						</div>
 						<div class="input-field">
-							<input type="tel" name="tel" required>
+							<input type="tel" name="phone" required>
 							<label for="name">Телефон</label>
 						</div>
 						<div class="input-field">
@@ -855,6 +890,7 @@
 				
 			</div>
 		</div>
+	
 	</section>
 
 	<!-- Всплывающая форма -->
@@ -869,18 +905,65 @@
 			<img src="img/logo.png" alt="Детский сад Лёва" class="img-responsive">
 		</div>
 		<h3>Напишите нам</h3>
-		<form id="sideForm" action="post">
-			<input type="text" name="name" required placeholder="
+		<form id="sideForm">
+
+			<!-- Hidden Required Fields -->
+			<input type="hidden" name="project_name" value="Детский сад ЛЁВА">
+			<input type="hidden" name="admin_email" value="beam@list.ru">
+			<input type="hidden" name="form_subject" value="Лёва. Всплывающая форма">
+			<!-- END Hidden Required Fields -->
+
+			<input type="text" name="Имя" required placeholder="
 			Ваше имя">
-			<input type="email" name="email" required placeholder="
+			<input type="email" name="e-mail" required placeholder="
 			Почта">
-			<input type="tel" name="tel" required placeholder="
+			<input type="tel" name="phone" required placeholder="
 			Телефон">
-			<textarea name="text" cols="30" rows="4" required placeholder="
+			<textarea name="Сообщение" cols="30" rows="4" required placeholder="
 			Задайте Ваш вопрос и мы Вам ответим"></textarea>
 			<input class="btn" type="submit" name="btn" value="Отправить">
 		</form>
 	</div>
+
+	<footer>
+		<div class="footer">
+
+			<div class="center-content">
+				<div class="telephone">
+					<i class="fa fa-mobile" aria-hidden="true"></i>
+					<strong><a href="tel:+79602310855">+7 (960) 231-08-55</a></strong>
+				</div>
+				<div class="telephone">
+					<i class="fa fa-mobile" aria-hidden="true"></i>
+					<strong><a href="tel:+79673596397">+7 (967) 359-63-97</a></strong>
+				</div>
+			</div>
+			<div class="center-content">
+				<a href="#contact">
+					<address><i class="fa fa-map-marker" aria-hidden="true"></i>Вишерская улица, 3к2, <br>г. Санкт-Петербург
+					</address>
+				</a>
+			</div>
+			<ul class="sciFooter">
+				<li><a href="https://vk.com/leva_shushary"><i class="fa fa-vk"></i></a></li>
+				<li><a href="https://www.instagram.com/ds_leva?r=nametag"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+				<li><a href="https://www.facebook.com/100564245015194"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				<!-- <li><a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a></li> -->
+			</ul>
+		</div>
+		<a href="#about" class="logo"><img class="img-responsive" src="img/logo.png" alt="Детский сад Лева"></a>
+	</footer>
+
+	<!-- Страница благодарности за отправку сообщения -->
+	<div class="thanks">
+		<h2>Спасибо!!!</h2>
+		<h4>Я очень рад, что Вы мне написали :)</h4>
+		<div class="thanksImg">
+			<img src="img/leva/L5.png" alt="Детский сад Лёва" class="img-responsive">
+		</div>
+		<div class="clickClose">Хорошо!</div>
+	</div>
+
 
 	<script src="js/scripts.min.js"></script>
 

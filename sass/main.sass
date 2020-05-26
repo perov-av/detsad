@@ -2,6 +2,52 @@
 @import "libs"
 @import "vars"
 
+::-webkit-scrollbar
+	width: 0
+#scrollPath
+	position: fixed
+	top: 0
+	right: 0
+	width: 10px
+	height: 100%
+	background: rgba(#fff, 0.05)
+	z-index: 100001
+#progressbar
+	position: fixed
+	top: 0
+	right: 0
+	width: 5px
+	height: 100%
+	background: linear-gradient(#008aff, #00ffe7)
+	z-index: 100001
+	animation: progressbar 5s linear infinite
+	border-radius: 5px
+.scrollTop
+	position: fixed
+	bottom: 800px
+	right: 20px
+	width: 30px
+	height: 30px
+	background: #ffffff
+	color: $accent
+	font-size: 1.4em
+	line-height: 1.2em
+	border: 1px solid $accent
+	border-radius: 50%
+	z-index: 3
+	text-align: center
+	cursor: pointer
+	visibility: hidden
+	opacity: 0
+	transition: 0.5s
+.scrollTop.active
+	visibility: visible
+	opacity: 1
+	bottom: 32px
+
+
+
+		
 *
 	-webkit-box-sizing: border-box
 	-moz-box-sizing: border-box
@@ -102,6 +148,10 @@ header
 	color: darken($blue, 8%)
 	font-family: $default-font
 	font-weight: 800
+	a
+		text-decoration: none
+		&:hover
+			color: $accent
 .center-content
 	align-items: center
 	text-align: center
@@ -126,8 +176,8 @@ header
 // *****Стили для кнопки МЕНЮ**********************
 #toggle
 	position: fixed
-	top: 55px
-	right: 40px
+	top: 43px
+	right: 43px
 	z-index: 1000
 	width: 50px
 	height: 50px
@@ -145,10 +195,10 @@ header
 	height: 100%
 	color: #ffffff
 	text-align: center
-	line-height: 50px
+	line-height: 45px
 	border-radius: 50%
 	background: $blue
-	transition: 0.5s
+	transition: 0.6s
 	font-weight: bold
 #toggle.active:before
 	transform: rotate(405deg)
@@ -156,17 +206,17 @@ header
 	color: $blue
 .overlay
 	position: fixed
-	top: 55px
-	right: 40px
+	top: 43px
+	right: 43px
 	width: 50px
 	height: 50px
 	cursor: pointer
 	border-radius: 50%
 	background: rgba($blue, 0.95)
-	transition: transform 0.5s
+	transition: transform 0.75s
 .overlay.active
 	transform: scale(100,100)
-	z-index: 2
+	z-index: 199
 
 #navigation
 	width: 100%
@@ -193,24 +243,32 @@ header
 				color: #ffffff
 				text-decoration: none
 				display: block
-				font-size: 1.4em
-				font-weight: 600
+				font-size: 1.15em
+				font-weight: 700
 				text-transform: uppercase
 				padding: 10px
+				transition: all 0.5s
+				letter-spacing: 0.03em
+				&:hover
+					
+					transform: scale(1.15)
+					font-weight: 800
+
 				&::before
 					content: ''
 					position: absolute
-					bottom: 8px
-					left: -12px
+					bottom: 5px
+					left: -2px
 					width: 100%
 					height: 20px
-					background: $accent
+					background: $red
 					border-radius: 15px
 					z-index: -1
 					transform: scaleX(0)
 					transform-origin: left
 					transition: transform 0.5s
 				&:hover::before
+					color: $red
 					transform: scaleX(1)
 #navigation.active
 	display: block
@@ -224,6 +282,7 @@ header
 	padding-left: 60px
 	min-height: 100vh
 	background: url(..\img\fon7.jpg)
+	background-attachment: fixed
 	background-size: cover
 	background-repeat: no-repeat
 	display: flex
@@ -256,16 +315,20 @@ header
 		margin-bottom: 30px
 	a.play
 		position: relative
-		margin: 20px auto
-		background: #fff
-		color: $blue
-		padding: 15px 30px
+		margin: 25px auto
+		background: $blue
+		color: #fff
+		padding: 10px 25px
 		text-decoration: none
 		text-transform: uppercase
-		font-size: 1.2em
+		font-size: 1em
 		border-radius: 15px
-		letter-spacing: 2px
+		letter-spacing: 1px
 		text-shadow: none
+		transition: all 0.4s
+		
+		&:hover
+			background: $accent
 		i
 			padding-left: 15px
 			font-size: 1.6em
@@ -367,6 +430,7 @@ header
 		grid-template-columns: 15% 1fr 15% 
 		align-items: center
 		justify-items: center
+		margin: 80px 0 30px
 	
 	
 	.box-wrap
@@ -378,6 +442,7 @@ header
 		grid-gap: 20px
 		padding: 30px 10px
 		box-sizing: border-box
+		margin-top: 20px
 		.box
 			position: relative
 			width: 100%
@@ -410,7 +475,7 @@ header
 				background: linear-gradient(45deg,#086d35,$green)
 				.front.active
 					h3
-						font-size: 1.7em
+						font-size: 1.4em
 						padding-left: 0
 						padding-right: 0
 				div.more:hover
@@ -489,7 +554,7 @@ header
 					margin: 0
 					padding: 20px 5px 30px
 					color: #ffffff
-					font-size: 1.75em
+					font-size: 1.4em
 					text-transform: uppercase
 					transition: 0.25s
 				// КНОПКА
@@ -552,6 +617,7 @@ header
 	display: flex
 	justify-content: center
 	align-items: center
+	margin-top: 50px
 	.card
 		position: relative 
 		background: #fff
@@ -577,6 +643,7 @@ header
 				padding: 8px 15px
 				text-decoration: none
 				border: 1px solid $blue
+				border-radius: 15px
 				color: $blue
 				font-weight: 600
 				transition: all 0.3s
@@ -1021,8 +1088,6 @@ p.term
 // Наши фотографии********************************************
 .popup-gallery
 	text-align: center
-
-
 .foto-wrap
 	position: relative
 	width: 100%
@@ -1034,16 +1099,445 @@ p.term
 		max-width: 90%
 		text-align: center
 	
+
+// Секция с формой ******************************************
+
+.bg-form
+	background: url(../img/bg-sec.jpg)
+	background-size: cover
+	.gridForm
+		display: grid
+		grid-template-columns: 45% 1fr
+		align-items: center
+		.mainForm
+			width: 100%
+			background: rgba(#fff, 0.85)
+			box-shadow: 0 10px 30px rgba(#000, 0.5)
+			padding: 15px
+			h3
+				color: #666666
+				margin: 0
+				padding: 0
+				text-align: center
+				font-size: 1.2em
+				text-transform: uppercase
+			.input-field
+				position: relative
+				width: 100%
+				margin-top: 20px
+				input, textarea
+					width: 100%
+					padding: 5px 0
+					box-sizing: border-box
+					background: transparent
+					border: none
+					outline: none
+					border-bottom: 2px solid #666666
+					font-size: 1em
+					color: #666666
+					font-weight: 700
+					resize: none
+				label
+					position: absolute
+					top: 0
+					left: 0
+					padding: 5px 0
+					pointer-events: none
+					font-size: 0.65em
+					color: #666666
+					font-weight: 700
+					text-transform: uppercase
+					transition: 0.4s
+				input:focus + label, textarea:focus + label, input:valid + label, textarea:valid + label 
+					top: -20px
+					color: $red
+			.btn
+				margin-top: 20px
+				background: #fff
+				color: $red
+				padding: 8px 30px
+				border: 2px solid $red
+				outline: none
+				border-radius: 15px
+				font-weight: 700
+				transition: 0.4s
+				float: right
+				&:hover
+					background: $red
+					color: #fff
+
+// Всплывающая форма ****************************************
+.sidebar-contact
+	position: fixed
+	top: 50%
+	left: -320px
+	transform: translateY(-50%)
+	width: 320px
+	height: auto
+	padding: 30px
+	background: #fff
+	box-shadow: 0 20px 50px rgba(#000000, 0.5)
+	box-sizing: border-box
+	transition: all 0.4s
+	z-index: 3
+	.toggleForm
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		right: -35px
+		width: 35px
+		height: 35px
+		line-height: 40px
+		background: #fff
+		text-align: center
+		cursor: pointer
+		i
+			font-size: 26px
+			color: $accent
+	.toggleFormX
+		position: absolute
+		top: 2px
+		right: 2px
+		width: 35px
+		height: 35px
+		line-height: 40px
+		background: #fff
+		text-align: center
+		cursor: pointer
+		i
+			font-size: 26px
+			color: $red
+	.toggleFormX.active
+		display: none
+	.levaForm
+		position: absolute
+		left: 15px
+		top: 15px
+		width: 50px
+	h3
+		color: $blue
+		text-transform: uppercase
+		text-align: center
+		margin-bottom: 15px
+	input, textarea
+		width: 100%
+		height: 36px
+		padding: 5px
+		margin-bottom: 10px
+		box-sizing: border-box
+		border: 1px solid rgba($blue , 0.8)
+		outline: none
+		&::placeholder
+			color: rgba(#666666, 0.8)
+			padding: 0
+			text-align: start
+			text-indent: -90px
+	input.btn
+		margin-top: 10px
+		width: 50%
+		background: #fff
+		color: $red
+		padding: 3px 20px 8px
+		border: 2px solid $red
+		outline: none
+		border-radius: 15px
+		font-weight: 700
+		transition: 0.4s
+		float: right
+		&:hover
+			background: $red
+			color: #fff
+	textarea
+		height: auto
+	textarea::placeholder
+		text-align: start
+		text-indent: -90px
+.sidebar-contact.active
+	left: 0
+	.toggleForm
+		display: none
+
+// Раздел с картой*****************************************
+.map
+	width: 100% 
+	padding: 0
+	margin: 0
+.contactdatta
+	text-align: left
+	h4
+		color: $accent
+		font-size: 1.2em
+		margin: 10px 
+	address
+		color: $black
+		font-style: normal
+		i
+			color: $red
+			font-size: 1.4em
+			padding-right: 10px
+	.dow
+		color: $black
+		text-align: left
+		font-size: 1em
+		padding: 0
+		.down
+			color: $red
+			padding-right: 10px
+			cursor: pointer
+			font-size: 1.4em
+
+// Страница в гостях у Левы *******************
+#video-section
+	padding: 0
+	margin: 0
+	width: 100%
+	height: 100vh
+	overflow: hidden
+	display: flex
+	justify-content: center
+	align-items: center
+	a.logo
+		display: block
+		position: absolute
+		top: 5px
+		left: 5px
+		width: 15%
+		height: auto
+		z-index: 2
+		text-align: center
+	a.btn-home
+		display: block
+		position: absolute
+		top: 60px
+		right: 40px
+		z-index: 2
+		text-decoration: none
+		background: $blue
+		border: 2px solid $blue
+		border-radius: 15px
+		padding: 6px 10px
+		color: #ffffff
+		transition: all 0.4s
+		&:hover
+			transform: scale(1.1)			
+	video
+		position: absolute
+		top: 0
+		left: 0
+		object-fit: cover
+		width: 100%
+		height: 100%
+		pointer-events: none
+	.video-content
+		position: relative
+		background: rgba(#000, 0.75)
+		z-index: 1
+		width: 100%
+		height: 100%
+		display: flex
+		justify-content: center
+		align-items: center
+		h1
+			position: relative
+			color: $blue
+			text-align: center
+			display: block
+			font-size: 3em
+			text-shadow: 0 0 2px #000000
+			letter-spacing: 0.04em
+			span
+				color: $accent
+				font-size: 1.2em
+				font-family: $head-font
+		p
+			display: block
+			position: absolute
+			bottom: 18%
+			left: 50%
+			transform: translateX(-50%)
+			color: #ffffff
+			text-align: center
+		.down
+			position: absolute
+			left: 50%
+			bottom: 4%
+			transform: translateX(-50%)
+			width: 50px
+			height: 50px
+			border-radius: 50%
+			border: 2px solid #ffffff
+			background: $blue
+			text-align: center
+			box-shadow: 0 0 0 2px #fff, 0 5px 25px rgba(#000, 0.8)
+			overflow: hidden
+			&::before
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				width: 50%
+				height: 100%
+				background: rgba(#000, 0.1)
+
+			i
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+				font-size: 1.9em
+				font-weight: 300
+				color: #ffffff
+				animation: scrollDown 1.5s linear infinite
+				text-shadow: 0 2px 5px rgba(#000, 0.2)
+
+
 	
+// Новости************************************
+.new
+	max-width: 1440px
+	padding: 20px
+	h2.HNew
+		text-align: center
+		margin: 30px
+		color: $blue
+		font-size: 2.2em
+	p.post
+		margin: 20px
+	.date
+		text-align: right
+		font-style: italic
+		margin-top: 20px
 
 
-		
+footer
+	position: relative
+	background: $black
+	padding: 10px 50px
+	display: grid
+	grid-template-columns: 90% 10%
+	justify-items: center
+	align-items: center
+	.footer
+		width: 100%
+		display: grid
+		grid-template-columns: 1fr 1fr 1fr
+		justify-items: center
+		align-items: center
+		.sciFooter
+			display: flex
+			flex-direction: row
+			place-items: center
+			li
+				list-style: none
+				place-items: center
+				margin-right: 15px
+				a
+					background-color: #fff
+					color: $accent //darken($blue, 5%)
+					position: relative
+					display: grid
+					place-items: center
+					width: 30px
+					height: 30px
+					text-decoration: none
+					border: 2px solid $accent //darken($blue, 5%)
+					border-radius: 50%
+					margin: 10px 0 0
+					transition: 0.3s
+					&:hover
+						background-color: $accent //darken($blue, 5%)
+						color: #fff
+					i
+						font-size: 1em
+
+		.center-content
+			address
+				font-size: 0.8em
+				color: #ffffff
+				i
+					color: $red
+					font-size: 1.3em
+			.telephone
+				strong
+					a
+						font-size: 0.6em
+						color: #ffffff
+						padding-bottom: 5px
+				i
+					color: $red
+					font-size: 1em
+
+.thanks
+	display: none
+	position: fixed
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	max-width: 320px
+	max-height: 500px
+	z-index: 10000
+	background: $black
+	text-align: center
+	padding: 20px
+	h2
+		color: $red
+		font-size: 3em
+	h4
+		color: $blue
+		font-size: 1.2em
+	.thanksImg
+		width: 65%
+		margin: 10px auto
+		text-align: center
+	.clickClose
+		margin: 30px auto
+		width: 40%
+		padding: 5px 10px
+		color: $red
+		font-size: 1em
+		font-weight: 600
+		letter-spacing: 0.05em
+		border: 2px solid $red
+		border-radius: 15px
+		text-align: center
+		cursor: pointer
+		transition: all 0.4s
+		&:hover
+			background: $red
+			color: #ffffff
+
+
+
+
+
+
+
 
 @keyframes animate
 	0%, 100%
 		background-position: top
 	45%, 55%
 		background-position: bottom
+
+@keyframes progressbar
+	0%, 100%
+		filter: hue-rotate(0deg)
+	50%
+		filter: hue-rotate(360deg)
+
+@keyframes scrollDown
+	0%
+		top: -10%
+	40%
+		top: 60%
+	60%
+		top: 30%
+	80%
+		top: 60%
+	100%
+		top: 110%
+		
+		
 		
 
 // Конец основного кода ***************\\

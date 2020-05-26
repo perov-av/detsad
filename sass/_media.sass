@@ -16,7 +16,7 @@
 		p
 			font-size: 1.2em
 	.clock
-		top: 6px
+		top: -7px
 		left: 10px
 	/**/
 
@@ -42,12 +42,17 @@
 		font-size: 1.3em
 
 
-			
-
-
-
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
+	footer
+		.footer
+			grid-template-columns: 1fr 1fr
+		.sciFooter
+			margin-top: 20px
+
+	.bg-form
+		.gridForm
+			grid-template-columns: 25% 1fr
 	#prog1
 		width: 90%
 	ul.priceFullday
@@ -76,7 +81,7 @@
 	p.term
 		font-size: 1.2em
 	.clock
-		top: 25px
+		top: 5px
 		left: 10px
 
 	#navigation
@@ -112,6 +117,27 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
+	footer
+		padding-right: 20px
+		grid-template-columns: 70% 30%
+		.footer
+			grid-template-columns: 1fr 1fr
+			.sciFooter
+				margin-top: 10px
+				li
+					margin-right: 10px
+			.center-content
+				address
+					font-size: 0.6em
+
+	.clock
+		top: 25px
+		left: 10px
+	.bg-form
+		.gridForm
+			grid-template-columns: 1fr
+		.imgForm
+			display: none
 	.card-wrap
 		.card
 			width: 250px
@@ -198,6 +224,24 @@
 	/**/
 
 @media only screen and (max-width : 390px)
+	footer
+		padding-right: 20px
+		grid-template-columns: 70% 30%
+		.footer
+			grid-template-columns: 1fr 
+			.sciFooter
+				margin-bottom: 20px
+			.center-content
+				margin-bottom: 15px
+				.telephone
+					display: block
+					font-size: 0.9em
+		
+		
+		
+	.sidebar-contact
+		.toggleFormX
+			right: 0
 	.foto-wrap
 		padding-left: 30px
 	#prog8
@@ -252,6 +296,8 @@
 			margin-top: 20px
 			padding: 8px 10px
 			font-size: 0.9em
+	.telephone
+		font-size: 0.7em
 
 
 /* Custom, iPhone Retina */
@@ -267,8 +313,7 @@
 			margin-top: 20px
 			padding: 8px 10px
 			font-size: 0.8em
-	.telephone
-		display: none
+	
 	.main-container
 		p
 			font-size: 1em

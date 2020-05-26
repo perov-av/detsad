@@ -126,9 +126,9 @@ $(document).ready(function() {
 			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
 		},
 		image: {
-			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+			tError: '<a href="%url%">Фотография #%curr%</a> почему-то не грузится... Лёва расстроен',
 			titleSrc: function(item) {
-				return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
+				return '<small>Частный детский сад "Лёва"</small>';
 			}
 		}
 	});
@@ -172,7 +172,19 @@ $(document).ready(function () {
 	});
 });
 	
-	
+// Кнопка НАВЕРХ********************************************
+window.addEventListener('scroll', function () {
+	var scroll = document.querySelector('.scrollTop');
+	scroll.classList.toggle("active", window.scrollY > 1200)
+});
+function scrollToTop() {
+	window.scrollTo({
+		top: 0,
+		behavior: 'smooth'
+	})
+}
+
+
 
 
 
@@ -195,3 +207,39 @@ $(document).ready(function () {
 // 	var movY = (d.pageY * -1 / 35);
 // 	$(this).css('background-position', movX + "px " + movY + "px");
 // });
+
+// Анимация при скроллинге
+new WOW().init();
+
+// Обработчик форм сообщений
+$(document).ready(function() {
+
+	//E-mail Ajax Send
+	$("form").submit(function() { //Change
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function () {
+			$('.thanks').fadeIn();
+			// alert(".thanks");
+
+			setTimeout(function() {
+				
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	});
+
+});
+
+$('.clickClose').click(function() { // по клику на крестик
+	$('.thanks').fadeOut();
+});
+
+// Маска ввода номера телефона (плагин maskedinput)
+$(function($){
+	$('[name="phone"]').mask("+7(999) 999-99-99");
+});
